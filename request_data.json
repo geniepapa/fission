@@ -59,6 +59,8 @@
 
     },
     "cookies":{
+      "key": "jsessionid_ubit1050",
+      "url": "http://homeport.apl.com/gentrack/trackingMain.do"
 
     },
     "data": {
@@ -100,6 +102,34 @@
         "discharge": "//div[@id='orderBillInformation']/table/tbody/tr[9]/td[3]/label/text()",
         "etd": "//table[@id='actualLoadingInfo']/tbody/tr/td[5]/span/text()",
         "eta": "//table[@id='actualLoadingInfo']/tbody/tr/td[8]/span/text()"
+    }
+  },
+
+  {
+    "key": "cscl",
+    "url": "http://222.66.158.204/cargo_track/cargo_track_rst.jsp",
+    "method": "post",
+    "cookies": {
+      "key": "JSESSIONID",
+      "url": "http://222.66.158.204/cargo_track/"
+    },
+    "search": "tf_bl_no",
+    "headers":{
+
+    },
+    "data": {
+      "tr_num": "bl_no",
+      "tf_bl_no": "SHANGO042447",
+      "submit\"2": "O K",
+      "lang": "EN"
+    },
+    "result":{
+        "voyage": "//tr[@class='maintext']/td[1]/div/font/a/text()[1]",
+        "vessel": "//tr[@class='maintext']/td[1]/div/font/a/text()[2]",
+        "load": "//tr[@class='maintext']/td[2]/div/font/text()",
+        "discharge": "//tr[@class='maintext']/td[4]/div/font/text()",
+        "etd": "//tr[@class='maintext']/td[3]/div/font/text()",
+        "eta": "//tr[@class='maintext']/td[5]/div/font/text()"
     }
   }
 ]
