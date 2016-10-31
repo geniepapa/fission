@@ -43,8 +43,9 @@ def search(search_number):
     if str.upper(request_data['method']) == 'GET':
         request_result = requests.get(request_data['url'], params=request_data['data'], cookies=cookies)
     else:
-        request_result = requests.post(request_data['url'], data=request_data['data'], headers=request_data['headers'])
-    #pprint(request_result.text)
+        request_result = requests.post(request_data['url'], data=request_data['data'], headers=request_data['headers'], cookies=cookies)
+
+    return request_result.text
 
 
     doc = etree.HTML(unicode.encode(request_result.text,encoding='utf-8'))

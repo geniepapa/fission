@@ -104,7 +104,6 @@
         "eta": "//table[@id='actualLoadingInfo']/tbody/tr/td[8]/span/text()"
     }
   },
-
   {
     "key": "cscl",
     "url": "http://222.66.158.204/cargo_track/cargo_track_rst.jsp",
@@ -131,5 +130,159 @@
         "etd": "//tr[@class='maintext']/td[3]/div/font/text()",
         "eta": "//tr[@class='maintext']/td[5]/div/font/text()"
     }
+  },
+
+  {
+    "key": "MSC",
+    "name": "地中海航运",
+    "url": "https://www.msc.com/track-a-shipment",
+    "method": "post",
+    "cookies": {
+      "url":"https://www.msc.com/track-a-shipment"
+    },
+    "search": "ctl00$ctl00$plcMain$plcMain$TrackSearch$txtBolSearch$TextField",
+    "headers":{
+      "Content-Type":"application/x-www-form-urlencoded"
+    },
+    "data": {
+      "__EVENTTARGET": "ctl00$ctl00$plcMain$plcMain$TrackSearch$hlkSearch",
+      "lng": "zh-CN",
+      "__VIEWSTATEGENERATOR":"184F8A35",
+      "__EVENTVALIDATION": "",
+      "ctl00$ctl00$Header$LanguageSelectionDropDown$ddlSelectLanguage": "zh-CN",
+      "ctl00$ctl00$Header$ScheduleSearch$ddlWeeksOut$DropDownField": "6",
+      "ctl00$ctl00$plcMain$plcMain$TrackSearch$txtBolSearch$TextField": "MSCUOL252100",
+      "__VIEWSTATE": ""
+    },
+    "result":{
+        "vessel": "//div[@id='ctl00_ctl00_plcMain_plcMain_rptBOL_ctl00_pnlBOLContent']/table/tbody[1]/tr/td[2]/span/text()",
+        "load": "//div[@id='ctl00_ctl00_plcMain_plcMain_rptBOL_ctl00_pnlBOLContent']/table/tbody[1]/tr/td[3]/span/text()",
+        "discharge": "//div[@id='ctl00_ctl00_plcMain_plcMain_rptBOL_ctl00_pnlBOLContent']/table/tbody[1]/tr/td[4]/span/text()"
+    }
+
+
+  },
+  {
+    "key": "EVERGREEN",
+    "name": "长荣海运",
+    "url": "http://www.shipmentlink.com/servlet/TDB1_CargoTracking.do",
+    "method": "post",
+    "cookies": {
+      "key": "JSESSIONID",
+      "url": "http://www.shipmentlink.com/servlet/TDB1_CargoTracking.do"
+    },
+    "search": "BL",
+    "headers":{
+
+    },
+    "data": {
+      "BL": "003602132872",
+      "CNTR": "",
+      "bkno": "",
+      "TYPE": "BL",
+      "NO": "",
+      "NO": "",
+      "NO": "",
+      "NO": "",
+      "NO": "",
+      "SEL": "s_bl",
+      "NO": "003602132872"
+    },
+    "result": {
+
+    }
+  },
+  {
+    "key": "HPG",
+    "name": "赫伯罗特"
+  },
+  {
+    "key": "NYK",
+    "name": "日本油轮"
+  },
+  {
+    "key": "MOSK-MOL",
+    "name": "大阪三井"
+  },
+  {
+    "key": "OOCL",
+    "name": "东方海外"
+  },
+  {
+    "key": "YML",
+    "name": "阳明海运"
+  },
+
+  {
+    "key": "HAM-SUB",
+    "name": "汉堡南美"
+  },
+  {
+    "key": "CSAV",
+    "name": "南美邮轮"
+  },
+  {
+    "key": "ZIM",
+    "name": "以星轮船"
+  },
+  {
+    "key": "HIMM",
+    "name": "现代商船"
+  },
+  {
+    "key": "PIL",
+    "name": "太平船务"
+  },
+  {
+    "key": "UASC",
+    "name": "阿拉伯航运"
+  },
+  {
+    "key": "WHL",
+    "name": "万海"
+  },
+  {
+    "key": "DELMAS",
+    "name": "达贸轮船"
+  },
+  {
+    "key": "IRISL",
+    "name": "伊朗航运"
+  },
+  {
+    "key": "RCL",
+    "name": "宏海箱运"
+  },
+  {
+    "key": "CCNI",
+    "name": "智利国航"
+  },
+  {
+    "key": "TS-LINE",
+    "name": "德翔航运"
+  },
+  {
+    "key": "KMTC",
+    "name": "高丽海运"
+  },
+  {
+    "key": "SITC",
+    "name": "山东海丰"
+  },
+  {
+    "key": "EMIRATES-ESL",
+    "name": "阿联酋航运"
+  },
+  {
+    "key": "HEUNG-A",
+    "name": "兴亚海运"
+  },
+  {
+    "key": "SAF",
+    "name": "南非航运"
+  },
+  {
+    "key": "SAMUDERA",
+    "name": "萨姆达拉"
   }
 ]
